@@ -6,6 +6,6 @@ while True:
     with open("info.csv","w",encoding="utf_8",newline='\n') as fileobj:
         fileobj.write("店名,混雑率,フラグ")
         for i in mise:
-            msg += i + "," + randint(0,100) + "," + randint(0,1) + "\n"
+            msg += i + "," + str(randint(0,100)) + "," + str(randint(0,1)) + "\n"
         fileobj.write(msg)
     time.sleep(30)
