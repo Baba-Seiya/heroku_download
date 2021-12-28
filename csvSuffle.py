@@ -8,4 +8,5 @@ while True:
         for i in mise:
             msg += i + "," + str(randint(0,100)) + "," + str(randint(0,1)) + "\n"
         fileobj.write(msg)
+        print("更新しました")
     time.sleep(5)
